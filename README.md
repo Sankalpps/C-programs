@@ -1,1 +1,32 @@
-# C-programs
+// Online C compiler to run C program online
+#include <stdio.h>
+#include<stdlib.h>
+int main() 
+{
+  int user, computer;
+  while(1)
+  {
+  printf("Enter 0 for rock 1 for paper 2 for scissors ");
+  scanf("%d",&user);
+  if(user>3)
+ {
+  printf("Value invalid ");
+  exit(0);
+ }
+  computer= rand()%3;
+  if(user==0 && computer==1)
+  printf("computer wins");
+  else if(user==1 && computer==2)
+  printf("computer wins");
+  else if(user==2 && computer==0)
+  printf("computer wins ");
+  if(user==1 && computer==0)
+  printf("user wins");
+  else if(user==2 && computer==1)
+  printf("user wins");
+  else if(user==0 && computer==2)
+  printf("user wins");
+  else
+  printf("It is a draw");
+  return 0;
+  
